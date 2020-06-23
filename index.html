@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"
+    />
+    <title>CLASSMATE</title>
+    <link
+      href="css/color_character_stylesheet.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="css/color_character_media_stylesheet.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script type="text/javascript" src="js/drawchar.js"></script>
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="css/stylepre.css?v=32" />
+
+    <script type="text/javascript" src="js/jqColorPicker.min.js"></script>
+    <script type="text/javascript" src="js/draw.js?v=3"></script>
+  </head>
+
+  <body class="color_character_bg1">
+    <div class="main">
+      <div class="header">
+        <div class="header_wrapper">
+          <a href="#" class="logo"><img src="images/logo.png" alt="" /></a>
+          <a class="menu_btn"></a>
+          <div class="social_icons">
+            <a href="#" class="fb_icon"></a>
+            <a href="#" class="twt_icon"></a>
+            <a href="#" class="you_tube_icon"></a>
+          </div>
+          <div class="menu_nav">
+            <ul>
+              <li>
+                <a href="#">Trump Cards</a>
+              </li>
+              <li>
+                <a href="#">Color Your Character</a>
+              </li>
+              <li>
+                <a href="#">Draw Your Character</a>
+              </li>
+              <li class="product_nav">
+                <a href="#">Products</a>
+                <div class="sub_nav">
+                  <a href="#"><img src="images/menu1.jpg" alt="" /></a>
+                  <a href="#"><img src="images/menu2.jpg" alt="" /></a>
+                  <!--<a href="#"><img src="images/menu3.jpg" alt=""></a>
+                        	<a href="#"><img src="images/menu4.jpg" alt=""></a>-->
+                </div>
+              </li>
+              <li>
+                <a href="#">TVC</a>
+              </li>
+              <li>
+                <a href="#">Quiz</a>
+              </li>
+            </ul>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="m_menu">
+          <a href="#">Trump Cards</a>
+          <a href="#">Color Your Superhero</a>
+          <a href="#">Draw Your Character</a>
+          <a class="m_sub">Products<span></span></a>
+          <a href="#">TVC</a>
+          <a href="#">Quiz</a>
+        </div>
+        <div class="m_sub_menu">
+          <a class="close_m_sub_menu"></a>
+          <a href="#"><img src="images/m_menu1.jpg" alt="" /></a>
+          <a href="#"><img src="images/m_menu2.jpg" alt="" /></a>
+        </div>
+      </div>
+
+      <div class="color_character">
+        <div class="color_character_wrapper">
+          <div class="cl_ch_lh">
+            <div class="cl_ch_lh_head">
+              <a href="#">GO Back</a>
+              <span>Iron Man</span>
+            </div>
+
+            <div class="character">
+              <div id="canvasDiv"></div>
+            </div>
+            <a class="submit_artwork">Submit Artwork</a>
+          </div>
+          <div class="cl_ch_rh">
+            <div class="brushes">
+              <div class="toolbox brushbox">
+                <div class="brushes">BRUSHES</div>
+                <div class="brushWrapper">
+                  <input
+                    class="curSize"
+                    id="strokesize"
+                    type="range"
+                    min="10"
+                    max="80"
+                    step="2"
+                    value="30"
+                  />
+                </div>
+              </div>
+              <a class="curColor active" value="#ff4343"
+                ><img src="images/fil1.png" alt=""
+              /></a>
+              <a class="curtool curmarker" data-tool="marker" value="#FFF"
+                ><img src="images/fil2.png" alt=""
+              /></a>
+              <a class="curtool curcrayon" data-tool="crayon"
+                ><img src="images/fil3.png" alt=""
+              /></a>
+              <a class="curtool curEraser active" data-tool="eraser"
+                ><img src="images/fil4.png" alt=""
+              /></a>
+              <div class="pallets">
+                <div class="clear"></div>
+                <!-- <input id="strokealpha" type="range" min="0" max="1" step="0.1" value="1" />          -->
+              </div>
+            </div>
+
+            <div class="fil_logo">
+              <img src="images/classmate_fil_logo.png" alt="" />
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+
+      <!--footer start-->
+      <div class="footer">
+        <div class="footer_wrapper">
+          <div class="footer_link_part">
+            <div class="footer_link">
+              <h2>Products</h2>
+              <a
+                href="http://classmatestationery.com/products/?category=pencils"
+                >Pencils</a
+              >
+              <a href="http://classmatestationery.com/products/?category=pens"
+                >Pens</a
+              >
+              <a
+                href="http://classmatestationery.com/products/?category=mathematical-instruments"
+                >Mathematical Instruments</a
+              >
+              <a
+                href="http://classmatestationery.com/products/?category=art-stationery"
+                >Art Stationery</a
+              >
+              <a
+                href="http://classmatestationery.com/products/?category=notebooks"
+                >Notebooks</a
+              >
+            </div>
+            <div class="footer_link">
+              <h2>About Classmate</h2>
+              <!-- <a href="#">What's New?</a>-->
+              <a href="http://classmatestationery.com/news_overview.php"
+                >In the news</a
+              >
+              <!--<a href="http://classmatestationery.com/leadership">Leadership Team</a>-->
+              <a
+                href="http://classmatestationery.com/download.php?filename=classmate_media_kit.zip"
+                >Media Kit</a
+              >
+            </div>
+            <div class="footer_link">
+              <h2>Students Corner</h2>
+              <a href="http://classmatestationery.com/student-blog"
+                >Student Blog</a
+              >
+              <a href="http://classmatestationery.com/contest">Contest</a>
+
+              <!-- <a href="#">Achievers</a>
+                    <a href="#">Fun Activities</a>-->
+            </div>
+
+            <div class="footer_link">
+              <h2>Forum</h2>
+              <a href="http://classmatestationery.com/forum">Forum Board</a>
+            </div>
+
+            <div class="footer_link">
+              <h2>Contact Us</h2>
+              <a href="http://classmatestationery.com/contact">Contact Us</a>
+              <a href="http://classmatestationery.com/business"
+                >Business Enquiries</a
+              >
+            </div>
+          </div>
+          <div class="footer_itc_logo_part">
+            <h2>itc website</h2>
+            <a href="http://www.itcportal.com/" target="_blank" rel="nofollow">
+              <div class="footer_itc_logo">
+                <img src="images/footer_itc_logo.png" alt="" /></div
+            ></a>
+            <div class="footer_subscribe">
+              <form id="subscribeForm">
+                <input
+                  type="text"
+                  class="subscribe_txt_box subScribe"
+                  placeholder="ENTER EMAIL TO SUBSCRIBE"
+                />
+                <input type="button" class="sub_btn" id="subButton" />
+              </form>
+              <div class="subscribe_load"></div>
+              <div class="subscribe_txt" style="display: none;">
+                Thank you for subscribe
+              </div>
+            </div>
+          </div>
+          <div class="footer_bottom">
+            <div class="bottom_links">
+              <!--<a href="#">Terms & Conditions</a>
+                    <span>|</span>-->
+              <a
+                href="http://www.itcportal.com/about-itc/policies/privacy-policy.aspx"
+                target="_blank"
+                >Privacy Policy
+              </a>
+              <span>|</span>
+              <a href="http://classmatestationery.com/terms-of-use.php"
+                >Terms of use</a
+              >
+            </div>
+            <div class="botton_social_link">
+              <span>Join our community :</span>
+              <a
+                href="https://www.facebook.com/Classmate"
+                class="fb_icon"
+                rel="nofollow"
+                target="_blank"
+              ></a>
+              <a
+                href="https://twitter.com/classmatebyitc"
+                class="twt_icon"
+                rel="nofollow"
+                target="_blank"
+              ></a>
+              <a
+                href="https://www.youtube.com/user/ClassmatebyITC"
+                class="you_icon"
+                rel="nofollow"
+                target="_blank"
+              ></a>
+              <!--   <a href="#" class="cam_icon"></a>-->
+            </div>
+          </div>
+          <a href="javascript:void(0)" class="up_arrow"></a>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <!--footer end-->
+    </div>
+  </body>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      prepareCanvas();
+      // that's it
+      $(".submit_artwork").click(function () {
+        saveShare();
+      });
+      showImage();
+    });
+  </script>
+</html>

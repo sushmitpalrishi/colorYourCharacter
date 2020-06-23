@@ -1,0 +1,258 @@
+/** {
+  margin: 0px;
+  padding: 0px;
+}
+body{width:100%;background: url('../images/bg-texture.png');
+}
+
+body.nooverflow{
+  overflow:hidden;
+}
+
+
+
+.wrapper{width:100%; margin:0px auto;}
+
+#main{margin-bottom:20px;text-align: center;}
+header{height: 93px; width: 100%;}
+.logo-color{  width: 150px;float: right;}
+.logo-color img {width:100%;}
+
+.menu-dropdown{ width: 55px;margin-top: 20px;}
+
+.tools{position:fixed;  height: 100px;
+  top: 0px;
+  width: 134px;
+  left: 30px;
+  top: 30px;
+}
+
+#canvasDiv{
+   overflow: hidden;
+  width: auto;
+  height: auto;
+  margin: 0px auto;
+  display: inline-block;
+  float:left;
+  max-height:80%;
+  box-shadow: -13px 25px 46px rgba(96,96,96,0.6);
+  background-color: white;
+
+}
+
+canvas{  width: auto; height: auto;overflow:hidden;
+  border: 1px solid rgba(96,96,96,0.9);
+  box-shadow: 1px 2px #666;
+  margin: 0px auto;
+  display: block;
+  cursor: url('../images/css-custom-cursor.ico') , default;
+}
+.mousebrush{width: 20px;height: 20px;position: absolute;border-radius: 10px;background-color: #fFeeFF;}
+ #tan{
+  width:100%;
+  height:100%;
+  position:fixed;
+  z-index:999;
+  background: url('../images/tan-bg.png');
+ }
+ #tan img{
+  width:100%;
+  height:100%;
+}
+.color{
+width: 50px;
+height: 50px;
+margin: 7px 5px;
+border: 9px solid transparent;
+float: left;
+border-radius: 100px;
+
+}
+
+.curColor{
+width: 100%;
+}
+.overlay{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(96, 96, 96, 0.5);
+  z-index:100;
+  display: none;
+}
+.overlay>img{  
+    width: auto;
+  display: block;
+  margin: 0px auto;
+}
+.overlay .close{  
+  float: right;
+  top: 5px;
+  right: 5px;
+  font-size: 30px;
+  position: absolute;
+}
+.share{
+
+}
+.twt{
+    
+}
+#tanishq-logo{
+    margin:20% auto 0;
+    max-width: 450px;
+    padding: 0 10px;
+    display: block;
+}
+#tanishq-logo.close{
+  opacity: 0;
+  transition:display 0.1s 2s ease,opacity 2s ease;
+  }
+#tanishq-logo.hide{
+  display: none;
+}
+#tanishq-logo img{
+    width: 100%;
+}
+.pallets{  width: auto;
+  margin: 30px auto;
+  text-align: center;
+  
+  display: inline-block;
+  -webkit-transition:all 0.8s ease;
+  -moz-transition:all 0.8s ease;
+  -o-transition:all 0.8s ease;
+  transition:all 0.8s ease;
+  }
+  .pallets.open{
+    opacity: 1;
+  }
+
+.toolbox{width:100px;
+transition:all 0.5s 0.2s ease;
+-webkit-transition:all 0.5s 0.2s ease;
+-moz-transition:all 0.5s 0.2s ease;
+-o-transition:all 0.5s 0.2s ease;
+margin-top: 20%;
+opacity: 1;
+}
+.tool:hover~.toolbox,.toolbox:hover{transform:translateX(0%); -o-transform:translateX(0%);-moz-transform:translateX(0%);-webkit-transform:translateX(0%);}
+
+.brushbox {position: static;left: 0px; top: 0px;float: left;}
+.colorbox {position: static;right:0px; top: 0px;float: left;}
+
+
+.brushWrapper{  left: -22px; position: relative;}
+
+.brushbox.open{left: 0px;}
+.colorbox.open{right:0px;}
+.colorWrapper div {width: 75px;margin: 0px auto;    height: 75px;}
+
+.brushWrapper>div{
+    display: block;
+      margin: 41px auto -2px;
+}
+
+.curSize{ opacity:0.6;}
+.curSize.huge{ width:75%; }  
+.curSize.large{ width:50%; }
+.curSize.normal{ width:30%; }
+.curSize.small{ width:25%; }
+.curSize.active{ opacity:1;}
+
+.actions{  
+  width: auto;
+  height: 100px;
+  display: inline-block;
+  margin:10px auto 0px;
+}
+.actions>div{  
+  width: auto;
+  display: inline-block;
+}
+.actions>div button{  
+  width: 100%;
+  border-radius: 0px;
+  height: 50px;
+  border: 1px solid #111;
+}
+.brushes{
+    background: #ffecce;
+    padding: 7px 5px;
+    width: 69px;
+    top: 80px;
+    left: 41px;
+    position: relative;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    display: none;
+    transform: rotateZ(90deg);
+    -webkit-transform: rotateZ(90deg);
+    -moz-transform: rotateZ(90deg);
+    -o-transform: rotateZ(90deg);
+}
+.curColor{
+  width:100%;
+  opacity:1;
+  border:1px solid white;
+}
+
+.brushWrapper,.colorWrapper{transition:all 0.5s ease;margin-top:25%;}
+.colors{
+    background: #ffecce;
+    padding: 7px 5px;
+    width: 69px;
+    top: 80px;
+    left: -44px;
+    position: relative;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    display: none;
+    transform: rotateZ(-90deg);
+    -webkit-transform: rotateZ(-90deg);
+    -moz-transform: rotateZ(-90deg);
+    -o-transform: rotateZ(-90deg);
+}
+   .brushbox:hover{left: 0px;}
+   .colorbox:hover{right:0px;}
+   .colorWrapper .curtool{
+          width: 50px;
+          height: 50px;
+        
+          float: left;
+          border: 1px solid black;
+          border-radius: 30px;
+          margin: 10px 22px;
+          background:  rgb(200, 104, 223);
+          opacity: 0.5;
+          overflow:hidden;
+        }
+    .colorWrapper .curtool.active{
+      border: 3px double black;
+      opacity: 1;
+    }
+    .colorWrapper .curEraser{
+
+        background: white !important;
+    }
+    #canvas{
+      cursor: url('../images/eraseico.png'), default;
+    }
+    .curcrayon div{
+      background: url("../images/crayon-texture1.png");
+      width: 100%;
+      padding: 25px;
+      background-size: cover;
+    }
+@media only screen (max-device-width: 768px) {
+  .colorWrapper div {
+    width: 50px;
+    margin: 0px auto;
+}
+
+
+}
+*/
